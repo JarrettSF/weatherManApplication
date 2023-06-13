@@ -1,0 +1,32 @@
+[
+  {
+    "Country": "United States",
+    "City": "San Francisco",
+    "Climate": "Bay Area",
+    "Attire": "Light Jacket"
+  },
+  {
+    "Country": "Canada",
+    "City": "Toronto",
+    "Climate": "Pacific Coast",
+    "Attire": "Jacket"
+  },
+  {
+    "Country": "Egypt",
+    "City": "Cairo",
+    "Climate": "Desert",
+    "Attire": "Light Clothing"
+  },
+  {
+    "Country": "Brazil",
+    "City": "Rio de Janeiro",
+    "Climate": "Tropical",
+    "Attire": "Light Clothing"
+  },
+  {
+    "Country": "Jamaica",
+    "City": "Kingston",
+    "Climate": "Tropical",
+    "Attire": "Light Clothing"
+  }
+]
