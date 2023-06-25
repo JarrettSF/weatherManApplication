@@ -1,71 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".placesToGoDetails">
-
-
-    <TextView
-        android:id="@+id/placeHead"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:background="@color/purple_200"
-        android:textColor="@color/white"
-        android:text="Place Info" />
-
+    tools:context=".newPlaces">
 
     <TextView
-        android:id="@+id/Country"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_margin="5dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/City"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_margin="5dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/Climate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_margin="5dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/Attire"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_margin="5dp"
-        android:text="TextView" />
-
-    <Button
-        android:id="@+id/closePlaces"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Close" />
-
-
-    <Button
-        android:id="@+id/save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="Save and Close" />
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:text="Add Place" />
 
+    <EditText
+        android:id="@+id/placeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:enabled="false"
+        android:hint="ID" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="Country" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="City" />
+
+    <EditText
+        android:id="@+id/climate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="Climate" />
+
+    <EditText
+        android:id="@+id/attire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:hint="Attire" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Save and Exit" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Exit" />
 
 </LinearLayout>

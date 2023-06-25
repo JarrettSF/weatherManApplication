@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
 /*
 these are the two buttons that lead to other activities in the application
  */
@@ -50,7 +51,7 @@ these are the two buttons that lead to other activities in the application
 
                 String userInput = zipInput.getText().toString().trim();
 
-                if ( userInput.length() == 0 ) {
+                if ( userInput.length() != 5 || !userInput.matches("[0-9]{5}") ) {
                     Toast.makeText(MainActivity.this, "Type A Zip Code", Toast.LENGTH_LONG).show();
                     return;
                 }

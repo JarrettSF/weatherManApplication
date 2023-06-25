@@ -6,12 +6,13 @@ import android.os.Parcelable;
 public class Place implements Parcelable {
     public Place() {
 
-
+        setId(-1);
         setCountry("---");
         setCity("---");
         setClimate("---");
         setAttire("---");
     }
+    private int Id;
 
     private String country;
     private String city;
@@ -36,6 +37,12 @@ public class Place implements Parcelable {
             return new Place[size];
         }
     };
+
+    public int getId() { return Id; }
+
+    public void setId(int id) {
+        this.Id = Id;
+    }
 
     public String getCountry() {
         return country;

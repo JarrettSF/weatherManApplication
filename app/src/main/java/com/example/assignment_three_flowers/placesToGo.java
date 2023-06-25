@@ -5,7 +5,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class placesToGo extends AppCompatActivity {
@@ -14,6 +16,19 @@ public class placesToGo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places_to_go);
+
+        TextView managePlaces = findViewById(R.id.managePlaces);
+        managePlaces.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                // Setting the DB Utils Settings fragment in the framelayout
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragments_frame, new dbUtilities());
+                fragmentTransaction.commit();
+                return false;
+            }
+        });
 
         FrameLayout frameLayout = findViewById(R.id.fragments_frame);
 
@@ -41,9 +56,6 @@ public class placesToGo extends AppCompatActivity {
 
         fragmentTransaction.commit();
     }
-
-
-
 
 
 }

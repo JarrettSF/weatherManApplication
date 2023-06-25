@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dbUtilities">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DB Utilities"
+        android:textSize="20sp"
+        android:layout_margin="3dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/recordCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="3dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/erase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Clear Database" />
+
+    <Button
+        android:id="@+id/button_load_json"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Load JSON File" />
+
+    <Button
+        android:id="@+id/shutDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="Close" />
+
+</LinearLayout>
